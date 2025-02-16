@@ -1,4 +1,4 @@
-class Tabla9{
+class Tabla9{//Inicio clase
   public static void main(String[] args) { //metodo principal
     System.out.println("Tablas de 1 al 9\n"); //Titulo
     for (int i = 1; i <= 9; i++){ //Primer bucle 
