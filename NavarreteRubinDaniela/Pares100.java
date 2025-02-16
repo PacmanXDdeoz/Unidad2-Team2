@@ -1,8 +1,10 @@
 class Pares100{
 public static void main(String[] args){
-System.out.println("Numeros pares del 1 al 100");
-for(int i = 0; i<=100; i+=2){
-System.out.println(i);
+System.out.println("Numeros pares del 1 al 100"); // Titulo del ejercicio
+for(int i = 1; i<=100; i++){ //Se utiliza un ciclo for para iterar los numeros del 1 al 100
+ if (i% 2 == 0){ //Se utiliza el if para que imprima unicamente los pares
+System.out.println(i);  //Se imprime la variable
+}
 }
 }
 }
