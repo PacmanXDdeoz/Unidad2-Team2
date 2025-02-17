@@ -16,7 +16,7 @@ public class NumerosFizz {//nombre de mi clase
             }
         }
         for (int i = 0; i <=20;i++) {//bucle que itera del numero 0 al 20 y su incremento es de uno en uno 
-            if (i % 5 == i % 3) {//condicion que evalua que los numeros divisibles entre 3 y 5, imprima la palabara FizzBuzz
+            if (i % 5 == 0 && i % 3==0) {//condicion que evalua que los numeros divisibles entre 3 y 5, imprima la palabara FizzBuzz
                 System.out.println("FizzBuzz " + i);//impresion del mensaje
             }
         }
