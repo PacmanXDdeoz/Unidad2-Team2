@@ -1,9 +1,12 @@
 class Tabla9{ // Se define la clase 
 public static void main(String[] args){ //Se define el metodo principal
-System.out.println("Tabla de multiplicar del numero 9"); //Titulo del ejercicio
-int tabla=9; //Se declara la variable 9 que será lo que se multiplicara mas adelante
-for(int i = 1; i<=10; i++){ //Se declara un for para iterar numeros del 1 al 10 
-System.out.println(tabla + " x " + i + " = " + (tabla*i)); //Aqui se imprime y realiza la operacion de multiplicar la variale previamente declarada por el for 
+System.out.println("Tablas de multiplicar"); //Titulo del ejercicio
+for(int i = 1; i<=10; i++){ //Se declara el primer for para multiplicar
+for(int a = 1; a<=10; a++){ //Se declara otro for para el multiplicador 
+System.out.println(i + " x " + a + " = " + (i*a)); //Aqui se realiza e imprime los dos for para realizar la multiplicacion
+}
+System.out.println("---------"); //Se imprime un separador para cada tabla
 }
 }
 }
+
