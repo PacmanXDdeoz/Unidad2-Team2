@@ -3,21 +3,19 @@
 // Para números divisibles por 5, imprimir “Buzz”.
 // Para números divisibles por 3 y 5, imprimir “FizzBuzz”.
 // En cualquier otro caso, imprimir el número.
-public class NumerosFizz {//nombre de mi clase
-    public static void main(String[] args) {//metodo principal
-        for (int i = 0; i <=20;i++) {//bucle que itera del numero 0 al 20 y su incremento es de uno en uno 
-            if (i % 3 == 0) {//condicion que evalua que los numeros divisibles entre 3, imprima la palabara fizz
-                System.out.println("Fizz " + i);//impresion de mensaje 
-            }
-        }
-        for (int i = 0; i <=20;i++) {//bucle que itera del numero 0 al 20 y su incremento es de uno en uno 
-            if (i % 5 == 0) {//condicion que evalua que los numeros divisibles entre 5, imprima la palabara buzz
-                System.out.println("Buzz " + i);//impresion de mensaje
-            }
-        }
-        for (int i = 0; i <=20;i++) {//bucle que itera del numero 0 al 20 y su incremento es de uno en uno 
-            if (i % 5 == 0 && i % 3==0) {//condicion que evalua que los numeros divisibles entre 3 y 5, imprima la palabara FizzBuzz
-                System.out.println("FizzBuzz " + i);//impresion del mensaje
+class NumerosFizz{ // Nombre de la clase se declara igual al archivo
+    public static void main(String[] args) { // Metodo principal mas importante 
+        for (int i = 1; i <= 20; i++) { // Utilizamos un bucle for que recorra los números del 1 al 20 
+            // Utilizamos la condición if para verificar si el número es divisible por 3 y 5
+            if (i % 3 == 0 && i % 5 == 0) {// Si es divisible por 3 y 5 imprimimos FizzBuzz
+                 System.out.println("FizzBuzz"); // Si es divisible por 3 pero no por 5 imprimimos Fizz
+            } else if (i % 3 == 0) {// Si es divisible por 5 pero no por 3 imprimimos Buzz    
+                System.out.println("Fizz");  // Si no es divisible por 3 ni 5 imprimimos el número
+            } else if (i % 5 == 0) { 
+                System.out.println("Buzz");
+            } else {
+               
+                System.out.println(i);
             }
         }
     }
